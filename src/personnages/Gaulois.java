@@ -16,11 +16,11 @@ public class Gaulois {
 	public int getForce(int force) {
 		return force;
 	}
-	public void parler() {
-		System.out.println("Les gaulois" + nom + ": << Bonjour à tous >>"); 
+	public String parler(String text) {
+		return "Les gaulois " + nom + ": << Bonjour à tous >>"; 
 	}
 	public  static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix", 8);
-		System.out.println(asterix.parler());
+		System.out.println(asterix.parler(asterix.getNom()));
 	}
 }
